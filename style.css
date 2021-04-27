@@ -1,0 +1,214 @@
+body {
+    background: radial-gradient(circle, rgba(0, 212, 255, 1) 35%, rgba(9, 9, 121, 1) 100%);
+    overflow: hidden;
+}
+
+
+.container {
+    width: 500px;
+    height: 90vh;
+    max-height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-box-shadow: 0px 0px 30px 16px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 30px 16px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 30px 16px rgba(0, 0, 0, 0.75);
+}
+
+.header {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(180deg, rgba(102, 102, 102, 1) 20%, rgba(45, 45, 45, 1) 100%);
+
+    position: relative;
+}
+
+
+
+#time {
+    color: #dadada;
+    font-size: 60px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+.quests {
+    width: 100%;
+    height: 65%;
+    background: #ddd;
+    overflow-y: scroll;
+}
+
+.add {
+    width: 100%;
+    height: 15%;
+    background: #fafafa;
+    display: inline-block;
+    border-top: 1px solid;
+    padding-top: 0px;
+    position: relative;
+}
+
+.but {
+    margin-top: 25px;
+    width: 40px;
+    height: 40px;
+    background: #235ED5;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-left: 10%;
+    align-items: center;
+}
+
+.but:hover {
+    cursor: pointer;
+}
+
+.but::before {
+    content: "";
+    position: absolute;
+    background: #dadada;
+    width: 5px;
+    height: 28px;
+    margin-top: 6px;
+    margin-left: 18px;
+}
+
+.but::after {
+    content: "";
+    position: absolute;
+    background: #dadada;
+    width: 28px;
+    height: 5px;
+    margin-top: 18px;
+    margin-left: 6px;
+}
+
+#pole {
+
+    margin-left: 5%;
+    text-align: center;
+    height: 40px;
+    width: 180px;
+    border-radius: 15px;
+    border: 0;
+    background: rgb(100, 182, 209);
+
+
+}
+
+.dpole {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pole:focus {
+    background: rgb(105, 152, 240);
+
+    outline: 0;
+}
+
+
+.newTile {
+    width: 90%;
+    margin-left: 5%;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.checkBox {
+    width: 36px;
+    height: 31px;
+    border: 3px solid #000;
+    background: #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 29px;
+    margin-top: 16px;
+    align-items: center;
+
+}
+
+.checkBox:hover {
+    cursor: pointer;
+}
+
+.checked {
+    width: 36px;
+    height: 31px;
+    border-radius: 50%;
+    border: 3px solid green;
+    box-sizing: border-box;
+    margin-left: 29px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.checked::before {
+    content: "";
+    display: block;
+    background: green;
+    width: 3px;
+    height: 17px;
+    transform: rotate(30deg);
+    margin-left: 13px;
+    margin-top: 5px;
+}
+
+.checked::after {
+    content: "";
+    display: block;
+    background: green;
+    width: 3px;
+    height: 10px;
+    transform: rotate(-40deg);
+    margin-left: 7px;
+    margin-top: -10px;
+}
+
+
+.tekst {
+
+    margin-left: 7px;
+    width: 80%;
+    height: 30px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 62px;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.del {
+
+    background: url(img/bin.png) no-repeat;
+    height: 35px;
+    width: 35px;
+    font-size: 30px;
+    margin-top: 16px;
+    margin-right: 25px;
+}
+
+.del:hover {
+    cursor: pointer;
+}
